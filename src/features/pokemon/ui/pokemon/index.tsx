@@ -1,14 +1,9 @@
 import { FC, useState, useMemo, useCallback } from 'react';
-import { Zap, Frown, Search, RotateCcw } from 'lucide-react';
-import { useAuth, useTranslation, useToast } from 'shared';
+import { Frown, Search, RotateCcw } from 'lucide-react';
+import { useAuth, useTranslation, useToast, PokemonGridSkeleton } from 'shared';
 import { useLogout } from 'features/auth/infrastructure/auth.queries';
 import { usePokemons } from 'features/pokemon/infrastructure/pokemon.queries';
-import {
-  PokemonCard,
-  SearchBar,
-  Pagination,
-  PokemonCardSkeleton,
-} from './components';
+import { PokemonCard, SearchBar, Pagination } from './components';
 
 export const PokemonList: FC = () => {
   const { user, logout } = useAuth();
@@ -130,25 +125,11 @@ export const PokemonList: FC = () => {
           </div>
 
           {isLoading && (
-            <div className="text-center py-12">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mb-6 shadow-lg animate-pulse">
-                <Zap className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                {t('pokemon.loading')}
-              </h3>
-              <p className="text-gray-500 mb-8">
-                {t('pokemon.loadingDescription')}
-              </p>
-              <div
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-6"
-                aria-label="Loading Pokémon"
-              >
-                {Array.from({ length: pageSize }).map((_, index) => (
-                  <PokemonCardSkeleton key={`skeleton-${index + 1}`} />
-                ))}
-              </div>
-            </div>
+            <PokemonGridSkeleton
+              count={pageSize}
+              showHeader={false}
+              className="py-12"
+            />
           )}
 
           {error && (

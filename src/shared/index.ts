@@ -13,6 +13,8 @@ export {
   SkeletonList,
 } from './components/Skeleton';
 
+export { PokemonGridSkeleton } from './components/PokemonGridSkeleton';
+
 export { AuthProvider, useAuth } from './context/AuthContext';
 
 export { useTranslation } from './hooks/useTranslation';
