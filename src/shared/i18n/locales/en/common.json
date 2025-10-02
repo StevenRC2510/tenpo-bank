@@ -1,0 +1,49 @@
+{
+  "app": {
+    "title": "Tenpo PokéBank",
+    "subtitle": "Welcome to the Pokémon world"
+  },
+  "form": {
+    "email": "Trainer Email",
+    "password": "Secret Code",
+    "emailPlaceholder": "trainer@pokemon.com",
+    "passwordPlaceholder": "••••••••",
+    "rememberMe": "Remember my journey",
+    "forgotPassword": "Forgot your secret code?",
+    "loginButton": "Start Adventure",
+    "loginButtonLoading": "Entering Pokémon world...",
+    "noAccount": "New to the Pokémon world?",
+    "createAccount": "Become a Trainer"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters"
+  },
+  "errors": {
+    "invalidCredentials": "Invalid credentials",
+    "loginError": "Error signing in"
+  },
+  "pokemon": {
+    "welcome": "Welcome back, {{name}}!",
+    "title": "Pokédex Explorer",
+    "logout": "Sign Out",
+    "searchPlaceholder": "Search for your favorite Pokémon...",
+    "loading": "Catching Pokémon...",
+    "loadingDescription": "Please wait while we gather the Pokémon...",
+    "error": "Oops! Something went wrong",
+    "errorGeneric": "An unexpected error occurred while catching Pokémon",
+    "retry": "Try Again",
+    "noResults": "No Pokémon found matching your search",
+    "noResultsWithTerm": "No Pokémon match \"{{term}}\". Try a different search term.",
+    "noResultsGeneric": "No Pokémon available at the moment.",
+    "totalPokemon": "{{count}} Pokémon discovered"
+  },
+  "pagination": {
+    "showing": "Showing {{start}} to {{end}} of {{total}} results",
+    "show": "Show:",
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

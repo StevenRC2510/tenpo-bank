@@ -1,0 +1,49 @@
+{
+  "app": {
+    "title": "Tenpo PokéBank",
+    "subtitle": "Bienvenido al mundo Pokémon"
+  },
+  "form": {
+    "email": "Email de Entrenador",
+    "password": "Código Secreto",
+    "emailPlaceholder": "entrenador@pokemon.com",
+    "passwordPlaceholder": "••••••••",
+    "rememberMe": "Recordar mi aventura",
+    "forgotPassword": "¿Olvidaste tu código secreto?",
+    "loginButton": "Comenzar Aventura",
+    "loginButtonLoading": "Entrando al mundo Pokémon...",
+    "noAccount": "Nuevo en el mundo Pokémon?",
+    "createAccount": "Conviértete en Entrenador"
+  },
+  "validation": {
+    "emailRequired": "Email es requerido",
+    "emailInvalid": "Formato de email inválido",
+    "passwordRequired": "Contraseña es requerida",
+    "passwordMinLength": "La contraseña debe tener al menos 6 caracteres"
+  },
+  "errors": {
+    "invalidCredentials": "Credenciales inválidas",
+    "loginError": "Error al iniciar sesión"
+  },
+  "pokemon": {
+    "welcome": "¡Bienvenido de vuelta, {{name}}!",
+    "title": "Explorador Pokédex",
+    "logout": "Cerrar Sesión",
+    "searchPlaceholder": "Busca tu Pokémon favorito...",
+    "loading": "Atrapando Pokémon...",
+    "loadingDescription": "Por favor espera mientras reunimos los Pokémon...",
+    "error": "¡Ups! Algo salió mal",
+    "errorGeneric": "Ocurrió un error inesperado mientras se capturaban los Pokémon",
+    "retry": "Intentar de Nuevo",
+    "noResults": "No se encontraron Pokémon que coincidan con tu búsqueda",
+    "noResultsWithTerm": "No se encontraron Pokémon que coincidan con \"{{term}}\". Prueba con un término diferente.",
+    "noResultsGeneric": "No hay Pokémon disponibles en este momento.",
+    "totalPokemon": "{{count}} Pokémon descubiertos"
+  },
+  "pagination": {
+    "showing": "Mostrando {{start}} a {{end}} de {{total}} resultados",
+    "show": "Mostrar:",
+    "previous": "Anterior",
+    "next": "Siguiente"
+  }
+}
